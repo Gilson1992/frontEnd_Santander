@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Clientes Burguer</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+            crossorigin="anonymous">
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+            crossorigin="anonymous">
+        </script>
+
+        <link rel="stylesheet" href="style.css">
+
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    </head>
+    <body>
+
+        <!-- Cabeçalho -->
+        <header>
+            <article class="navbar bg-dark border-bottom border-body"
+                data-bs-theme="dark">
+                <section class="container-fluid">
+                    <a class="navbar-brand">
+                        <img src="./img/burguer.png"
+                            alt="Logo" width="30" height="24"
+                            class="d-inline-block align-text-top"> BURGUER
+
+                    </a>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2 bi bi-search"
+                            type="search" placeholder="Search"
+                            aria-label="Search">
+                        <button class="btn btn-light-success" type="ligth"><i
+                                class="bi bi-search"></i></button>
+
+                    </form>
+                </section>
+            </article>
+        </header>
+
+        <!-- NavBar de MENU -->
+        <nav
+            class=" opacity-75 nav justify-content-center navbar bg-dark border-bottom border-body"
+            data-bs-theme="dark">
+
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link  btn btn-dark">MENU
+                        1</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link btn btn-dark">MENU 2</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link btn btn-dark">MENU 3</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link btn btn-dark">MENU 4</a>
+                </li>
+            </ul>
+        </nav>
+
+        
+        <main class="cadastro">
+            <section class="justify-content-center navbar">
+                <h4>CADASTRO DE CLIENTES</h1>
+            </section>
+
+            <aside class="buttonAdicionar">
+                <button class="btn btn-primary" data-bs-toggle="modal"
+                    data-bs-target="#myModal" type="ligth" id="adicionar">
+                    Adicionar <i class="bi bi-plus-circle-fill"></i></button>
+            </aside>
+
+                     <!-- Tabela Principal -->
+        <section class="mx-auto container mt-5">
+            <table class="table table-light shadow-lg table-striped text-center">
+                <thead>
+                    <tr class="">
+                        <th>Id</th>
+                        <th>Name</th>
+                        <th>Data Nascimento</th>
+                        <th class="d-none d-md-table-cell">Email</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Gilson Souza</td>
+                        <td>19/04/2023</td>
+                        <td class="d-none d-md-table-cell">gilson@souza.com</td>
+                        <td class="d-flex gap-1 justify-content-center">
+                            <a class="link-light link-underline-opacity-0" href="editar.html">
+                                <button class="d-flex gap-1 btn btn-primary align-items-center">
+                                    Editar    <i class="bi bi-pencil-fill"></i>
+                                </button>
+                            </a>
+                            <button class="d-flex gap-1 btn btn-danger align-items-center" data-bs-toggle="modal" data-bs-target="#myModal">
+                                Excluir   <i class="bi bi-trash3-fill"></i>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Gustavo</td>
+                        <td>09/03/2023</td>
+                        <td class="d-none d-md-table-cell">gustavo@gustavo.com</td>
+                        <td class="d-flex gap-1 justify-content-center">
+                            
+                            <a class="link-light link-underline-opacity-0" href="editar.html">
+                                <button class="d-flex gap-1 btn btn-primary align-items-center">
+                                    
+                                    Editar <i class="bi bi-pencil-fill"></i>
+                                </button>
+                            </a>
+                            <button class="d-flex gap-1 btn btn-danger align-items-center" data-bs-toggle="modal" data-bs-target="#myModal">
+                                
+                                Excluir <i class="bi bi-trash3-fill"></i>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Izabel</td>
+                        <td>19/09/2023</td>
+                        <td class="d-none d-md-table-cell">izabel@izabel.com</td>
+                        <td class="d-flex gap-1 justify-content-center">
+                            <a class="link-light link-underline-opacity-0" href="editar.html">
+                                <button class="d-flex gap-1 btn btn-primary align-items-center">
+                                    
+                                    Editar  <i class="bi bi-pencil-fill"></i>
+                                </button>
+                            </a>
+                            <button class="d-flex gap-1 btn btn-danger align-items-center" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                               
+                                Excluir <i class="bi bi-trash3-fill"></i>
+                            </button>
+                        </td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </section>
+
+
+                    <!-- The Modal Excluir -->
+                    <aside class="modal fade" id="myModal">
+                        <aside class="modal-dialog">
+                            <aside class="modal-content">
+
+                                <!-- Modal Header -->
+                                <aside class="modal-header">
+                                    <h4 class="modal-title">Excluir Cliente</h4>
+                                    <button type="button" class="btn-close"
+                                        data-bs-dismiss="modal"></button>
+                                </aside>
+
+                                <!-- Modal body -->
+                                <aside class="modal-body">
+                                    <h5>Deseja realmente apagar o Cliente?</h5>
+                                </aside>
+
+                                <!-- Modal footer -->
+                                <aside class="modal-footer">
+                                    <button type="button"
+                                        class="btn btn-success"
+                                        data-bs-dismiss="modal">Sim</button>
+
+                                    <button type="button" class="btn btn-danger">Não</button>
+                                </aside>
+
+                            </aside>
+                        </aside>
+                    </aside>
+                </main>
+
+            </body>
+            <footer class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p>&copy; 2023 BURGUER. Todos os direitos
+                                reservados.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <p>Endereço: Rua da Exemplo, 123 - Cidade, Estado</p>
+                            <p>Telefone: (00) 1234-5678</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+        </html>

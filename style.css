@@ -1,0 +1,47 @@
+@media only screen and (max-width: 600px) {
+    
+  }
+
+body {
+
+
+}
+
+.cadastro{
+    margin-top: 60px;
+}
+
+.buttonAdicionar{
+    position: absolute;
+    right: 0;
+    margin-right: 30px;
+}
+
+.table-responsive{
+    width: 60%;
+    height: 50vh;
+    margin: 60px;
+    display: flex;
+    margin-top: 60px;
+
+    
+ 
+}
+
+.line tr, .line td{
+    border: 1px solid #ccc;
+    padding: 8px;
+    align-content: space-between;
+
+}
+
+.footer {
+    background-color: black;
+    padding: 20px 0;
+    
+  }
+  
+  .footer p {
+    margin: 5px 0;
+    color: white;
+  }
