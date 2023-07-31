@@ -75,42 +75,86 @@
             </section>
 
             <aside class="buttonAdicionar">
+                <a href="editar.html">
                 <button class="btn btn-primary" data-bs-toggle="modal"
                     data-bs-target="#myModal" type="ligth" id="adicionar">
                     Adicionar <i class="bi bi-plus-circle-fill"></i></button>
+                </a>
             </aside>
 
-            <article class="table-responsive">
-                <form action="">
-                    <p>
-                        <label for="">NOME : </label>
-                        <input type="text">
-                    </p>
-                    <p>
-                        <label for="">DATA NASCIMENTO : </label>
-                        <input type="Date">
-                    </p>
-                    <p>
-                        <label for="">Email : </label>
-                        <input type="text">
-                    </p>
-                    <p>
-                        <label for="sexo">SEXO :</label>
-                        <select class="form-select" aria-label="Default select example">
-                            <option value="#">Selecione o Sexo</option>
-                            <option value="">Masculino</option>
-                            <option value="2">Feminino</option>
-                          </select>
-                    </p>
-                </form>
-            </article>
+            <!-- Cadastro -->
+            <form class="p-5 container-grid">
+                <section class="mb-3 input_width_medio d-lg-flex">
+                    <label for="InputName" class="form-label m-1">Nome</label>
+                    <input type="text" class="form-control" id="InputName"
+                        placeholder="Nome Completo">
+                </section>
 
-            <button class="btn btn-primary" type="submit">Button</button>
-            <input class="btn btn-primary" type="button" value="Input">
-            <input class="btn btn-primary" type="submit" value="Submit">
-            <input class="btn btn-primary" type="reset" value="Reset">
+                <section class="mb-3 input_width_menor d-lg-flex">
+                    <label for="InputDate" class="form-label m-1 text-nowrap">Data
+                        de Nascimento</label>
+                    <input type="date" class="form-control  text-center"
+                        id="InputDate">
+                </section>
 
+                <section class="mb-3 input_width_medio d-lg-flex">
+                    <label for="exampleInputEmail1" class="form-label m-1">Email</label>
+                    <input type="email" class="form-control"
+                        id="exampleInputEmail1" aria-describedby="emailHelp"
+                        placeholder="name@server.com">
+                </section>
+
+                <section
+                    class="mb-3 form-check input_container input_width_menor p-0 d-lg-flex">
+                    <label class="form-check-label m-1" for="exampleCheck1">Sexo</label>
+                    <select class="form-select text-center" name="exampleCheck1">
+                        <option>Masculino</option>
+                        <option>Feminino</option>
+                        <option>Prefiro não responder</option>
+                        <option>Outro</option>
+                    </select>
+                </section>
+                <section class="button-container">
+                    <a class="btn btn-danger botao-cancelar" href="index.html">Cancelar</a>
+                    <button type="button" class="btn btn-primary" 
+                        data-bs-toggle="modal"
+                        data-bs-target="#myModalSalvar">Salvar</button>
+                </section>
+
+            </form>
+
+            <!-- The Modal Salvar -->
+            <aside class="modal fade" id="myModalSalvar">
+                <aside class="modal-dialog">
+                    <aside class="modal-content">
+
+                        <!-- Modal Header -->
+                        <aside class="modal-header">
+                            <h4 class="modal-title">SUCESSO</h4>
+                            <button type="button" class="btn-close"
+                                data-bs-dismiss="modal"></button>
+                        </aside>
+
+                        <!-- Modal body -->
+                        <aside class="modal-body">
+                            <h5>Cliente Salvo com Sucesso</h5>
+                        </aside>
+
+                        <!-- Modal footer -->
+                        <aside class="modal-footer">
+                            <button type="button"
+                                class="btn btn-success"
+                                data-bs-dismiss="modal">Sim</button>
+
+                            <button type="button" class="btn btn-danger">Não</button>
+                        </aside>
+
+                    </aside>
+                </aside>
+            </aside>
         </main>
+
+
 
     </body>
     <footer class="footer">
